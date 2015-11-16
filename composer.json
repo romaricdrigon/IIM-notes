@@ -22,7 +22,11 @@
         "javiereguiluz/easyadmin-bundle": "^1.9",
         "phpunit/phpunit": "^5.0",
         "doctrine/data-fixtures": "^1.1",
-        "doctrine/doctrine-fixtures-bundle": "^2.3"
+        "doctrine/doctrine-fixtures-bundle": "^2.3",
+        "behat/behat": "*",
+        "behat/mink": "*",
+        "behat/mink-extension": "*",
+        "behat/mink-selenium2-driver": "*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
