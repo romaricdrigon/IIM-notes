@@ -25,7 +25,7 @@ class Grade
      * @var Student
      *
      * Ici nous avons "l'autre côté" - on rajoute bien "inversedBy"
-     * @ORM\ManyToOne(targetEntity="AppBundle:Student", inversedBy="grades")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Student", inversedBy="grades")
      */
     private $student;
 
@@ -40,14 +40,15 @@ class Grade
         return $this->id;
     }
 
+
     /**
      * Set student
      *
-     * @param \AppBundle\Entity\AppBundle:Student $student
+     * @param \AppBundle\Entity\Student $student
      *
      * @return Grade
      */
-    public function setStudent(\AppBundle\Entity\AppBundle:Student $student = null)
+    public function setStudent(\AppBundle\Entity\Student $student = null)
     {
         $this->student = $student;
 
@@ -57,7 +58,7 @@ class Grade
     /**
      * Get student
      *
-     * @return \AppBundle\Entity\AppBundle:Student
+     * @return \AppBundle\Entity\Student
      */
     public function getStudent()
     {

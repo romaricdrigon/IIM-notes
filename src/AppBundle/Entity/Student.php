@@ -47,7 +47,7 @@ class Student
      *
      * Nous avons plusieurs notes pour un étudiant
      * Une note - Grade - a un champ "student", il faut le préciser via "mappedBy"
-     * @ORM\OneToMany(targetEntity="AppBundle:Grade", mappedBy="student")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Grade", mappedBy="student")
      */
     private $grades;
 
@@ -144,11 +144,11 @@ class Student
     /**
      * Add grade
      *
-     * @param \AppBundle\Entity\AppBundle:Grade $grade
+     * @param \AppBundle\Entity\Grade $grade
      *
      * @return Student
      */
-    public function addGrade(\AppBundle\Entity\AppBundle:Grade $grade)
+    public function addGrade(\AppBundle\Entity\Grade $grade)
     {
         $this->grades[] = $grade;
 
@@ -158,9 +158,9 @@ class Student
     /**
      * Remove grade
      *
-     * @param \AppBundle\Entity\AppBundle:Grade $grade
+     * @param \AppBundle\Entity\Grade $grade
      */
-    public function removeGrade(\AppBundle\Entity\AppBundle:Grade $grade)
+    public function removeGrade(\AppBundle\Entity\Grade $grade)
     {
         $this->grades->removeElement($grade);
     }
