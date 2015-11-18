@@ -37,9 +37,8 @@ class StudentController extends Controller
         if ($request->isMethod('POST')
             && $form->handleRequest($request)
             && $form->isValid()) {
-            $db = $this->getDoctrine()->getManager();
-            $db->persist($student);
-            $db->flush();
+            // Pour créer des admins
+            $this->get('fos_user.user_manager')->updateUser($student);
 
             return $this->redirectToRoute('student_list');
         }
