@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3767a14fd24cc1adba1a97bd8b55398f",
-    "content-hash": "d5eb8668fc2d4111f03da5463deb2e4b",
+    "hash": "519c5b331a17c079eb33dbc1fe59c48e",
+    "content-hash": "a85f7b1276e706c6b608e1551c114537",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1176,6 +1176,94 @@
                 "xml"
             ],
             "time": "2015-11-10 12:26:42"
+        },
+        {
+            "name": "knpuniversity/guard",
+            "version": "0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/knpuniversity/KnpUGuard.git",
+                "reference": "a9b972544587d7a7b1b1d2e038da321e8c5c9b08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/knpuniversity/KnpUGuard/zipball/a9b972544587d7a7b1b1d2e038da321e8c5c9b08",
+                "reference": "a9b972544587d7a7b1b1d2e038da321e8c5c9b08",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/security-core": "~2.6",
+                "symfony/security-http": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KnpU\\Guard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Weaver",
+                    "email": "weaverryan@gmail.com"
+                }
+            ],
+            "description": "Provides Guard-style authentication in Symfony's security component",
+            "homepage": "http://knpuniversity.com",
+            "keywords": [
+                "security"
+            ],
+            "time": "2015-09-07 12:52:30"
+        },
+        {
+            "name": "knpuniversity/guard-bundle",
+            "version": "0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/knpuniversity/KnpUGuardBundle.git",
+                "reference": "66ee9e482c0491d175785836d6b3e7ec4754ac6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/knpuniversity/KnpUGuardBundle/zipball/66ee9e482c0491d175785836d6b3e7ec4754ac6a",
+                "reference": "66ee9e482c0491d175785836d6b3e7ec4754ac6a",
+                "shasum": ""
+            },
+            "require": {
+                "knpuniversity/guard": "~0.1",
+                "php": ">=5.3.9",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/security-bundle": "~2.6"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "KnpU\\GuardBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Weaver",
+                    "email": "weaverryan@gmail.com"
+                }
+            ],
+            "description": "This Bundle provides Guard-style authentication in Symfony",
+            "homepage": "http://knpuniversity.com",
+            "keywords": [
+                "security"
+            ],
+            "time": "2015-06-28 19:02:52"
         },
         {
             "name": "kriswallsmith/assetic",

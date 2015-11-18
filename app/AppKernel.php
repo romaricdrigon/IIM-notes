@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
+            new KnpU\GuardBundle\KnpUGuardBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
