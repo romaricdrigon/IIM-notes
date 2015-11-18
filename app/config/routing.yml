@@ -5,4 +5,4 @@ app:
 easy_admin_bundle:
     resource: "@EasyAdminBundle/Controller/"
     type:     annotation
-    prefix:   /easy-admin
+    prefix:   /admin
